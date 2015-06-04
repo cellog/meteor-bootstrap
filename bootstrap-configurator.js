@@ -132,4 +132,4 @@ var handler = function (compileStep, isLiterate) {
   createLessFile(outputLessFile, bootstrapContent);
 };
 
-Plugin.registerSourceHandler('bootstrap.json', {archMatching: 'web'}, handler);
+Plugin.registerSourceHandler('bootstrap.ns.json', {archMatching: 'web'}, handler);
