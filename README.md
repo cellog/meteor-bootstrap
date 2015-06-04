@@ -2,6 +2,8 @@ Bootstrap for meteor
 ====================
 
 This package integrates bootstrap into meteor and lets you configure what parts you need.
+It is a fork of the origional at nemo64:bootstrap, and outputs namespaced .less files
+to work with namespaced less files.
 
 How to install
 --------------
