@@ -1,6 +1,6 @@
 Package.describe({
-  name: "nemo64:bootstrap",
-  summary: "Highly configurable bootstrap integration.",
+  name: "cellog:ns-bootstrap",
+  summary: "Highly configurable namespaced bootstrap integration",
   version: "3.3.4_2",
   git: "https://github.com/Nemo64/meteor-bootstrap"
 });
