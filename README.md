@@ -1,4 +1,7 @@
-Bootstrap for meteor
+#*Upgrade problems?* 
+See [Upgrading instructions](https://github.com/Nemo64/meteor-bootstrap#upgrading) before creating an issue.
+
+Bootstrap for Meteor
 ====================
 
 This package integrates bootstrap into meteor and lets you configure what parts you need.
@@ -78,14 +81,21 @@ If the file is empty, it will be filled for with the following content:
 Upgrading
 ---------
 
-When upgrading, you may get an error stating:
+After upgrading using `meteor update`, you may get an error stating:
 
 ```
 While building the application:
-   client/lib/custom.bootstrap.less:1629:18: Less compiler error: variable @form-group-margin-bottom is undefined
+   client/lib/custom.bootstrap.less:1629:18: Less compiler error: ...
 ```
 
-If so, See https://github.com/Nemo64/meteor-bootstrap/issues/42 for the fix.
+This is due to the upstream Bootstrap library introducing LESS variables that your project is not aware of. The quickest fix is to execute the following script from within your project:
+
+```
+curl https://raw.githubusercontent.com/Nemo64/meteor-bootstrap/master/upgrade/upgrade-3.3.4-3.3.5.sh | /bin/bash
+```
+
+Alternately, you can manually apply this [patch](https://github.com/Nemo64/meteor-bootstrap/blob/master/upgrade/3.3.5-upgrade.patch) to `custom.bootstrap.less`: 
+
 
 Contribution
 -------
