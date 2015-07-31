@@ -1,14 +1,28 @@
-### v.next
+### 3.3.5_2
+######16 July 2015
 
-- e5c2607 (HEAD, origin/master, origin/HEAD, master) Update README.md
+Uncouple tooltip.less from popover.
 
+### 3.3.5_1
+######4 July 2015
 
-### 3.3.4_2 
+Republish so Readme updates are available on Atmosphere.
+
+### 3.3.5
+######3 July 2015
+
+Update Bootstrap to latest upstream version 3.3.5.
+
+- e5c2607 Update README.md
+- 0292d8e Bump version to 3.3.5
+- 618b33c Create tool for fixing upgrade error
+
+### 3.3.4_2
 ######11 April 2015
 
 Adjust source of the auto-generated `custom.bootstrap.json` file, which previously
 could cause errors due to the compnent load sequence diverging from the upstream
-Bootstrap. 
+Bootstrap.
 
 - 1d60760 bump version
 - a1ce591 fix bootstrap load sequence
